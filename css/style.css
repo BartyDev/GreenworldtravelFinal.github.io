@@ -10,6 +10,13 @@ button,
 
 /*======================================================================================*/
 
+/*
+html {
+    scroll-behavior: smooth;
+}*/
+
+
+
 /*-----------------------INDEX-------------------*/
 
 #navbar {
@@ -166,15 +173,194 @@ footer p {
 
 
 .contacto-body {
-    background-color: rgb(255, 255, 219);   
+    background-color: rgb(255, 255, 219);
 }
 
 .bg {
     background-image: url(../assets/TOORE-PIZA.jpg);
     background-position: center center;
     background-size: cover;
+
 }
 
+
+
+/*----------------------Quienes somos?-------------------*/
+
+
+
+.name-main {
+    background-image: linear-gradient(to right, #434343 0%, black 100%);
+}
+
+
+
+
+/*---------------------SOBRE NOSOTROS-------------------*/
+
+
+
+
+.somoslp {
+    background-image: linear-gradient(60deg, rgba(102, 99, 134, 0.281) 0%, rgba(175, 251, 152, 0.281) 100%), url(../assets/peñas\ mar.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+.nosotros-div {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contenido-img {
+    display: inline-flex;
+    align-content: center;
+    margin-bottom: 20px;
+
+}
+
+.contenido-img img {
+    width: 320px;
+    padding: 5px;
+    margin: 0 auto;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.contenido-nosotros {
+    display: inline-flex;
+    width: 350px;
+    flex-wrap: wrap;
+}
+
+
+
+
+
+/*---------------------BLOGGGG-------------------*/
+
+
+
+.main-blog {
+    background-color: rgb(255, 255, 219);
+}
+
+
+
+
+
+/*---------------------TOURS NACIONAL E INTERNACIONAL-------------------*/
+
+.main-font {
+    background-color: rgb(255, 255, 219);
+}
+
+/*CARDS*/
+
+
+.conteiner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: rgb(0, 81, 255);
+    width: 250px;
+    margin: 30px 40px;
+    border-radius: 15px;
+    justify-content: space-between;
+
+}
+
+.nacional {
+    background-color: #fff;
+}
+
+.card-image {
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+    object-fit: cover;
+}
+
+.card-1 {
+    background-image: url(../assets/lagotiticaca.jpg);
+}
+
+.card-2 {
+    background-image: url(../assets/nevadoperu.jpg);
+}
+
+.card-3 {
+    background-image: url(../assets/cerrode7colores.jpg);
+}
+
+.card-4 {
+    background-image: url(../assets/MACHUPICCHU.jpg);
+}
+
+.card-5 {
+    background-image: url(../assets/CRISTOREDENTOR.jpg);
+}
+
+.card-6 {
+    background-image: url(../assets/CHECHENITZA.jpg);
+}
+
+.card-7 {
+    background-image: url(../assets/MURALLACHINA.jpg);
+}
+
+.card-8 {
+    background-image: url(../assets/COLISEUM.jpg);
+}
+
+.card-9 {
+    background-image: url(../assets/TAJMAHAL.jpg);
+}
+
+.card-10 {
+    background-image: url(../assets/PETRA.jpg);
+}
+
+.card h3 {
+    padding: 10px;
+}
+
+.card p {
+    padding: 10px;
+}
+
+.card a {
+    background-color: #000;
+    color: #fff;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    border-radius: 10px;
+}
+
+.card:hover {
+    background-color: rgb(62, 62, 62);
+    color: #fff;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+}
+
+.card a:hover {
+    color: rgba(29, 226, 62, 0.842);
+}
 
 
 
