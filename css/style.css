@@ -10,7 +10,7 @@ button,
 
 /*======================================================================================*/
 
-/*
+/* para despues :)
 html {
     scroll-behavior: smooth;
 }*/
@@ -18,6 +18,7 @@ html {
 
 
 /*-----------------------INDEX-------------------*/
+
 
 #navbar {
     z-index: 1;
@@ -85,7 +86,7 @@ html {
 
 
 .card-border {
-    border: solid 10px white;
+    border: solid 5px white;
     border-radius: 20px;
     overflow: hidden;
     transition: all ease-out 0.2s;
@@ -135,6 +136,7 @@ html {
     transform: scale(1.05);
 }
 
+
 .amiibo-name {
     background-color: rgba(0, 0, 0, 0.4);
     color: white;
@@ -151,6 +153,7 @@ html {
     background-size: 40px 40px;
 }
 
+
 footer {
     background: #1b2a4e;
     min-height: 100px;
@@ -166,6 +169,35 @@ footer p {
     font-size: 26px;
     padding: 0 8px;
     color: #f3f3f3;
+}
+
+/*=======GENERAL====*/
+
+h1 {
+    display: inline-block;
+    position: relative;
+}
+h1::after,h1::before {
+    content: "";
+position: absolute;
+width: 120px;
+height: 3px;
+background-color: #fff;
+top: 0.6em;
+transform: scale(0);
+transition: 0.2s all ease-in;
+}
+
+h1:hover::before, h1:hover::after {
+    transform: scale(1);
+}
+
+h1::before {
+    left: -150px;
+}
+
+h1::after {
+    right: -150px;
 }
 
 
@@ -273,10 +305,11 @@ footer p {
 
 .card {
     background: rgb(0, 81, 255);
-    width: 250px;
+    width: 350px;
     margin: 30px 40px;
     border-radius: 15px;
     justify-content: space-between;
+    border: 1px solid #000;
 
 }
 
@@ -294,51 +327,79 @@ footer p {
 
 .card-1 {
     background-image: url(../assets/lagotiticaca.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-2 {
     background-image: url(../assets/nevadoperu.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-3 {
     background-image: url(../assets/cerrode7colores.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-4 {
     background-image: url(../assets/MACHUPICCHU.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-5 {
     background-image: url(../assets/CRISTOREDENTOR.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-6 {
     background-image: url(../assets/CHECHENITZA.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-7 {
     background-image: url(../assets/MURALLACHINA.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-8 {
     background-image: url(../assets/COLISEUM.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-9 {
     background-image: url(../assets/TAJMAHAL.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
 }
 
 .card-10 {
     background-image: url(../assets/PETRA.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 300px;
+    
 }
 
 .card h3 {
-    padding: 10px;
+    padding-left: 10px;
 }
 
-.card p {
-    padding: 10px;
-}
 
 .card a {
     background-color: #000;
