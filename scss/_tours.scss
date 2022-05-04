@@ -11,6 +11,9 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    .nacional {
+    background-color: #fff;
+}
     .card {
     background: rgb(0, 81, 255);
     width: 350px;
