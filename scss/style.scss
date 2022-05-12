@@ -1,7 +1,42 @@
-@import "_estilosGenerales";
-@import "_variables";
-@import "_inicio";
-@import "_quienessomos";
-@import "_contacto";
-@import "_tours";
-@import "_blog"
+
+/*-----------------IMPORT-----------------*/
+
+@mixin flexPropiedades ($contenido,$justificado,$centrado) {
+    display: flex ;
+    flex-wrap: $contenido;
+    justify-content: $justificado;
+    align-items: $centrado;
+}
+
+
+@import "variables";
+@import "button";
+@import "cards";
+@import "estilosGeneral";
+@import "animacionestitle";
+@import "paginaPrincipal";
+@import "nosotros";
+@import "tour";
+@import "contactar";
+@import "blogpost";
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

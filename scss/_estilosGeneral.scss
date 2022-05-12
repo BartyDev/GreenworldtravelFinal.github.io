@@ -1,0 +1,31 @@
+/*========RESETEO DE PAGINA==========*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bitter', serif;
+    box-sizing: border-box;
+}
+
+
+
+/*=====FOOTER GENERAL====*/
+
+
+footer {
+    background: $color5;
+    min-height: 100px;
+    ;
+
+    p {
+        color: $color4;
+        text-align: center;
+    }
+
+    i {
+        font-size: 26px;
+        padding: 0 8px;
+        color: $color4;
+    }
+    
+}

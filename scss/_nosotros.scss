@@ -1,4 +1,3 @@
-
 /*----------------------QUIENES SOMOS-------------------*/
 
 .somoslp {
@@ -8,12 +7,9 @@
     background-size: cover;
     background-attachment: fixed;
     .nosotros-div {
-    display: flex;
+    @include flexPropiedades(wrap,space-evenly,center);
     margin-top: 50px;
     width: 100%;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-wrap: wrap;
     .contenido-img {
     display: inline-flex;
     align-content: center;
@@ -29,18 +25,10 @@
 .contenido-nosotros {
     display: inline-flex;
     width: 350px;
-    flex-wrap: wrap;
+    flex-wrap: wrap;  
 }
 }
+button {
+    @extend .botones;
 }
-
-
-
-
-
-
-
-
-
-
-
+}

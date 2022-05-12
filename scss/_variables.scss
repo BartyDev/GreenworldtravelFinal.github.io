@@ -1,3 +1,20 @@
+
 $colorBeige : rgb(255, 255, 219);
-$colorGreen :  rgba(29, 226, 62, 0.842);
+$colorGreen : rgba(29, 226, 62, 0.842);
+$color1     : rgb(0, 81, 255);
+$color2     : rgb(62, 62, 62);
+$color3     : #000;
+$color4     : #fff;
+$color5     : #1b2a4e;
+$color6     : rgb(219, 26, 26);
+$colores:(numero1:$color1,numero2:$color2,numero3:$color3,numero4:$color4,numero5:$color5);
+
 $CardAltura : 300px ;
+$card: (
+    colorFondo : $color1,
+    ancho : 550px,
+    margenes : 30px 40px,
+    formaBorde : 15px,
+    justificado : space-between,
+    bordes : 1px solid $color3,
+)

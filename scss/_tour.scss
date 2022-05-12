@@ -2,57 +2,23 @@
 
 .main-font {
     background-color: $colorBeige;
-}
+    .conteiner {
 
-/*CARDS*/
+    @include flexPropiedades(wrap,space-evenly,center);
 
-
-.conteiner {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    .nacional {
-    background-color: #fff;
-}
-    .card {
-    background: rgb(0, 81, 255);
-    width: 350px;
-    margin: 30px 40px;
-    border-radius: 15px;
-    justify-content: space-between;
-    border: 1px solid #000;
-    .card-image {
-    height: 170px;
-    margin-bottom: 15px;
-    background-size: cover;
-    border-radius: 15px 15px 0 0;
-    object-fit: cover;
-    h3 {
-    padding-left: 10px;
-}
-}
-a {
-    background-color: #000;
-    color: #fff;
-    padding: 15px 20px;
-    display: block;
-    text-align: center;
-    margin: 20px 50px;
-    border-radius: 10px;
-    &:hover {
-    color: $colorGreen;
-}
-}
-&:hover {
+    #nacional,#nacional2,#nacional3,#nacional4 {
+        background-color: #fff;
+        &:hover {
     background-color: rgb(62, 62, 62);
     color: #fff;
     cursor: pointer;
     transform: scale(1.03);
-    transition: all 1s ease;
+    transition: all 1s ease-in;
+}     
 }
-}
-}
-
+        
+   
+/*====CARDS====*/
 
 .card-1 {
     background-image: url(../assets/lagotiticaca.jpg);
@@ -122,4 +88,9 @@ a {
     background-size: cover;
     background-position: center;
     height: $CardAltura;   
+}
+}
+button {
+    @extend .botones;
+}
 }

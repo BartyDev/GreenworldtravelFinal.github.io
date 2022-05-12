@@ -1,7 +1,9 @@
 /*---------------------BLOGGGG-------------------*/
 
 
-
 .main-blog {
     background-color: $colorBeige;
+    .boton {
+        @extend .botones;
+    }
 }

@@ -1,75 +1,130 @@
 @charset "UTF-8";
-/*=======GENERAL  Titulo Hover====*/
-h1 {
-  display: inline-block;
-  position: relative;
+/*-----------------IMPORT-----------------*/
+.botones, .card button, .container-md button, #amiibos button, .somoslp button, .main-font button, .main-blog .boton {
+  background-color: #000;
+  color: #fff;
+  padding: 15px 20px;
+  display: block;
+  text-align: center;
+  margin: 20px 50px;
+  border-radius: 10px;
+  border: none;
 }
 
-h1::after,
-h1::before {
-  content: "";
-  position: absolute;
-  width: 120px;
-  height: 3px;
-  background-color: green;
-  top: 0.6em;
-  transform: scale(0);
-  transition: 0.2s all ease-in;
+.botones:hover, .card button:hover, .container-md button:hover, #amiibos button:hover, .somoslp button:hover, .main-font button:hover, .main-blog .boton:hover {
+  color: rgba(29, 226, 62, 0.842);
+  text-align: center;
 }
 
-h1:hover::before,
-h1:hover::after {
-  transform: scale(1);
+.botones-numero1 {
+  background-color: #0051ff;
 }
 
-h1::before {
-  left: -150px;
+.botones-numero2 {
+  background-color: #3e3e3e;
 }
 
-h1::after {
-  right: -150px;
+.botones-numero3 {
+  background-color: #000;
 }
 
-.name-main {
-  background-image: linear-gradient(to right, #434343 0%, black 100%);
+.botones-numero4 {
+  background-color: #fff;
 }
 
-/*=======GENERAL FONT FAMILY====*/
-h1,
-h2,
-h3,
-h4,
-h5,
-button,
-.amiibo-name {
+.botones-numero5 {
+  background-color: #1b2a4e;
+}
+
+.card {
+  background-color: #0051ff;
+  width: 550px;
+  margin: 30px 40px;
+  border-radius: 15px;
+  justify-content: space-between;
+  border: 1px solid #000;
+}
+
+.card .card-image {
+  margin-bottom: 15px;
+  background-size: cover;
+  border-radius: 15px 15px 0 0;
+  object-fit: cover;
+}
+
+.card .card-image h3 {
+  padding-left: 10px;
+}
+
+.card:hover {
+  background-color: #3e3e3e;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease;
+}
+
+/*========RESETEO DE PAGINA==========*/
+* {
+  margin: 0;
+  padding: 0;
   font-family: 'Bitter', serif;
+  box-sizing: border-box;
 }
 
-/* para despues :)
-html {
-    scroll-behavior: smooth;
-}*/
+/*=====FOOTER GENERAL====*/
 footer {
   background: #1b2a4e;
   min-height: 100px;
 }
 
 footer p {
-  color: #f3f3f3;
+  color: #fff;
   text-align: center;
 }
 
 footer i {
   font-size: 26px;
   padding: 0 8px;
-  color: #f3f3f3;
+  color: #fff;
+}
+
+/*=======GENERAL FONDO Y ANIMACION D´ TITULO====*/
+.name-main {
+  background-image: linear-gradient(to right, #434343 0%, #000 100%);
+}
+
+.name-main h1 {
+  display: inline-block;
+  position: relative;
+}
+
+.name-main h1::after,
+.name-main h1::before {
+  content: "";
+  position: absolute;
+  width: 140px;
+  height: 2px;
+  background-color: #db1a1a;
+  top: 0.6em;
+  transform: scale(0);
+  transition: 0.2s all ease-in;
+}
+
+.name-main h1:hover::before,
+.name-main h1:hover::after {
+  transform: scale(1);
+}
+
+.name-main h1::before {
+  left: -150px;
+}
+
+.name-main h1::after {
+  right: -150px;
 }
 
 /*-----------------------INDEX-------------------*/
-#navbar {
-  z-index: 1;
-}
-
 #ribbon {
   background-color: #db1a1a;
   background-image: repeating-linear-gradient(45deg, transparent, transparent 25px, rgba(131, 21, 21, 0.5) 25px, rgba(131, 21, 21, 0.5) 40px);
@@ -120,8 +175,6 @@ footer i {
 #games {
   background: white;
   background: linear-gradient(0deg, white 0%, #63c4ff 57%);
-  background-repeat: repeat-x;
-  background-size: 75%;
   margin-top: -20px;
 }
 
@@ -129,33 +182,21 @@ footer i {
   color: #fff;
 }
 
-.card-border {
-  border: solid 5px white;
+.container-md .card-border {
+  border: solid 2px #fff;
   border-radius: 20px;
   overflow: hidden;
-  transition: all ease-out 0.2s;
+  transition: all ease .5s;
 }
 
-.card-border:hover {
-  transform: scale(1.05);
-}
-
-.text-shadow {
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
-}
-
-#separator-amiibos {
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  z-index: 2;
+.container-md .card-border:hover {
+  transform: scale(1.02);
 }
 
 #separator-amiibos .content {
   background: url(../assets/bg-03.png);
-  width: 110%;
+  width: 100%;
   height: 100px;
-  margin-left: -5%;
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   background-size: 100px;
@@ -167,18 +208,22 @@ footer i {
   background-size: 100px;
 }
 
-.amiibo {
+#amiibos .text-shadow {
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.6);
+}
+
+#amiibos .amiibo {
   cursor: pointer;
   transition: all ease-out 0.2s;
 }
 
-.amiibo:hover {
+#amiibos .amiibo:hover {
   transform: scale(1.05);
 }
 
-.amiibo-name {
+#amiibos .amiibo-name {
   background-color: rgba(0, 0, 0, 0.4);
-  color: white;
+  color: #fff;
   display: inline-block;
   margin: 0 auto;
   text-align: center;
@@ -189,6 +234,7 @@ footer i {
   background-color: #ffffdb;
 }
 
+/*----------------------QUIENES SOMOS-------------------*/
 .somoslp {
   background-image: linear-gradient(60deg, rgba(102, 99, 134, 0.281) 0%, rgba(175, 251, 152, 0.281) 100%), url(../assets/peñas-mar.jpg);
   background-repeat: no-repeat;
@@ -197,22 +243,22 @@ footer i {
   background-attachment: fixed;
 }
 
-.nosotros-div {
+.somoslp .nosotros-div {
   display: flex;
-  margin-top: 50px;
-  width: 100%;
+  flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
+  margin-top: 50px;
+  width: 100%;
 }
 
-.contenido-img {
+.somoslp .nosotros-div .contenido-img {
   display: inline-flex;
   align-content: center;
   margin-bottom: 20px;
 }
 
-.contenido-img img {
+.somoslp .nosotros-div .contenido-img img {
   width: 320px;
   padding: 5px;
   margin: 0 auto;
@@ -220,10 +266,105 @@ footer i {
   border-radius: 20px;
 }
 
-.contenido-nosotros {
+.somoslp .nosotros-div .contenido-nosotros {
   display: inline-flex;
   width: 350px;
   flex-wrap: wrap;
+}
+
+/*---------------------TOURS NACIONAL E INTERNACIONAL-------------------*/
+.main-font {
+  background-color: #ffffdb;
+}
+
+.main-font .conteiner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  /*====CARDS====*/
+}
+
+.main-font .conteiner #nacional, .main-font .conteiner #nacional2, .main-font .conteiner #nacional3, .main-font .conteiner #nacional4 {
+  background-color: #fff;
+}
+
+.main-font .conteiner #nacional:hover, .main-font .conteiner #nacional2:hover, .main-font .conteiner #nacional3:hover, .main-font .conteiner #nacional4:hover {
+  background-color: #3e3e3e;
+  color: #fff;
+  cursor: pointer;
+  transform: scale(1.03);
+  transition: all 1s ease-in;
+}
+
+.main-font .conteiner .card-1 {
+  background-image: url(../assets/lagotiticaca.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-2 {
+  background-image: url(../assets/nevadoperu.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-3 {
+  background-image: url(../assets/cerrode7colores.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-4 {
+  background-image: url(../assets/MACHUPICCHU.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-5 {
+  background-image: url(../assets/CRISTOREDENTOR.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-6 {
+  background-image: url(../assets/CHECHENITZA.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-7 {
+  background-image: url(../assets/MURALLACHINA.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-8 {
+  background-image: url(../assets/COLISEUM.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-9 {
+  background-image: url(../assets/TAJMAHAL.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+
+.main-font .conteiner .card-10 {
+  background-image: url(../assets/PETRA.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 300px;
 }
 
 /*----------------------CONTACTO-------------------*/
@@ -235,135 +376,6 @@ footer i {
   background-image: url(../assets/TOORE-PIZA.jpg);
   background-position: center;
   background-size: cover;
-}
-
-/*---------------------TOURS NACIONAL E INTERNACIONAL-------------------*/
-.main-font {
-  background-color: #ffffdb;
-}
-
-/*CARDS*/
-.conteiner {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #0051ff;
-  width: 350px;
-  margin: 30px 40px;
-  border-radius: 15px;
-  justify-content: space-between;
-  border: 1px solid #000;
-}
-
-.nacional {
-  background-color: #fff;
-}
-
-.card-image {
-  height: 170px;
-  margin-bottom: 15px;
-  background-size: cover;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
-}
-
-.card-1 {
-  background-image: url(../assets/lagotiticaca.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-2 {
-  background-image: url(../assets/nevadoperu.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-3 {
-  background-image: url(../assets/cerrode7colores.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-4 {
-  background-image: url(../assets/MACHUPICCHU.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-5 {
-  background-image: url(../assets/CRISTOREDENTOR.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-6 {
-  background-image: url(../assets/CHECHENITZA.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-7 {
-  background-image: url(../assets/MURALLACHINA.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-8 {
-  background-image: url(../assets/COLISEUM.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-9 {
-  background-image: url(../assets/TAJMAHAL.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card-10 {
-  background-image: url(../assets/PETRA.jpg);
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-
-.card h3 {
-  padding-left: 10px;
-}
-
-.card a {
-  background-color: #000;
-  color: #fff;
-  padding: 15px 20px;
-  display: block;
-  text-align: center;
-  margin: 20px 50px;
-  border-radius: 10px;
-}
-
-.card:hover {
-  background-color: #3e3e3e;
-  color: #fff;
-  cursor: pointer;
-  transform: scale(1.03);
-  transition: all 1s ease;
-}
-
-.card a:hover {
-  color: rgba(29, 226, 62, 0.842);
 }
 
 /*---------------------BLOGGGG-------------------*/
