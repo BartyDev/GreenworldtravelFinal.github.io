@@ -21,6 +21,10 @@ con el titulo Green World Travel : contiene imagenes ,se trabajo boostrap y scss
 "La pagina tours contiene todo sobre los viajes ,lugares, promociones : contiene imagenes ,se trabajo boostrap y scss, responsive"
 "en el apartado contacto podras registrarte y recibiras promociones y fechas de nuestros mejores tours : contiene imagenes ,se trabajo boostrap y scss, responsive"
 "Nuestro blog trae material informativo sobre lugares y como preparar y/o organizar tu primer  viaje con nosotros visitalo! : contiene imagenes ,se trabajo boostrap y scss, responsive"
+## Cambios
+Se realizo cambios generales:
+agregamos mixin ,extend,map,map get,each en el proyecto, se agrego el meta description y los keywords a los h1 h2 h3 y palabras clave en los "alt"
+Imagenes optimizadas y agregamos el README.
 ## Licencia
 Copyright ©Green World Travel ® 2021 Todos los derechos reservados.
 ## Sitio
