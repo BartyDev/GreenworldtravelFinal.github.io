@@ -1,8 +1,7 @@
-
 /*-----------------IMPORT-----------------*/
 
-@mixin flexPropiedades ($contenido,$justificado,$centrado) {
-    display: flex ;
+@mixin flexPropiedades ($contenido, $justificado, $centrado) {
+    display: flex;
     flex-wrap: $contenido;
     justify-content: $justificado;
     align-items: $centrado;
@@ -19,24 +18,3 @@
 @import "tour";
 @import "contactar";
 @import "blogpost";
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

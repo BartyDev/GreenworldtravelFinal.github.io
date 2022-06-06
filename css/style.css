@@ -150,7 +150,7 @@ footer i {
 }
 
 #separator-ribbon .content {
-  background-image: url(../assets/fondo-bajo.jpg);
+  background-color: #db1a1a;
   width: 150%;
   height: 150px;
   margin-left: -25%;
@@ -236,10 +236,8 @@ footer i {
 
 /*----------------------QUIENES SOMOS-------------------*/
 .somoslp {
-  background-image: linear-gradient(60deg, rgba(102, 99, 134, 0.281) 0%, rgba(175, 251, 152, 0.281) 100%), url(../assets/peñas-mar.jpg);
-  background-repeat: no-repeat;
+  background: #ffffdb;
   background-position: center;
-  background-size: cover;
   background-attachment: fixed;
 }
 
@@ -285,11 +283,17 @@ footer i {
   /*====CARDS====*/
 }
 
-.main-font .conteiner #nacional, .main-font .conteiner #nacional2, .main-font .conteiner #nacional3, .main-font .conteiner #nacional4 {
+.main-font .conteiner #nacional,
+.main-font .conteiner #nacional2,
+.main-font .conteiner #nacional3,
+.main-font .conteiner #nacional4 {
   background-color: #fff;
 }
 
-.main-font .conteiner #nacional:hover, .main-font .conteiner #nacional2:hover, .main-font .conteiner #nacional3:hover, .main-font .conteiner #nacional4:hover {
+.main-font .conteiner #nacional:hover,
+.main-font .conteiner #nacional2:hover,
+.main-font .conteiner #nacional3:hover,
+.main-font .conteiner #nacional4:hover {
   background-color: #3e3e3e;
   color: #fff;
   cursor: pointer;
@@ -298,42 +302,42 @@ footer i {
 }
 
 .main-font .conteiner .card-1 {
-  background-image: url(../assets/lagotiticaca.jpg);
+  background-image: url(../assets/lagotiticaca.jpeg);
   background-size: cover;
   background-position: center;
   height: 300px;
 }
 
 .main-font .conteiner .card-2 {
-  background-image: url(../assets/nevadoperu.jpg);
+  background-image: url(../assets/nevadoperu.jpeg);
   background-size: cover;
   background-position: center;
   height: 300px;
 }
 
 .main-font .conteiner .card-3 {
-  background-image: url(../assets/cerrode7colores.jpg);
+  background-image: url(../assets/cerrode7colores.jpeg);
   background-size: cover;
   background-position: center;
   height: 300px;
 }
 
 .main-font .conteiner .card-4 {
-  background-image: url(../assets/MACHUPICCHU.jpg);
+  background-image: url(../assets/MACHUPICCHU-pequeño.jpeg);
   background-size: cover;
   background-position: center;
   height: 300px;
 }
 
 .main-font .conteiner .card-5 {
-  background-image: url(../assets/CRISTOREDENTOR.jpg);
+  background-image: url(../assets/CRISTOREDENTORpequeño.jpeg);
   background-size: cover;
   background-position: center;
   height: 300px;
 }
 
 .main-font .conteiner .card-6 {
-  background-image: url(../assets/CHECHENITZA.jpg);
+  background-image: url(../assets/CHECHENITZA-pequeño.jpeg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -347,7 +351,7 @@ footer i {
 }
 
 .main-font .conteiner .card-8 {
-  background-image: url(../assets/COLISEUM.jpg);
+  background-image: url(../assets/COLISEUM-pequeño.jpeg);
   background-size: cover;
   background-position: center;
   height: 300px;
@@ -370,12 +374,6 @@ footer i {
 /*----------------------CONTACTO-------------------*/
 .main-contacto {
   background-color: #ffffdb;
-}
-
-.main-contacto .bg {
-  background-image: url(../assets/TOORE-PIZA.jpg);
-  background-position: center;
-  background-size: cover;
 }
 
 /*---------------------BLOGGGG-------------------*/

@@ -7,14 +7,16 @@
     margin: 20px 50px;
     border-radius: 10px;
     border: none;
+
     &:hover {
-    color: $colorGreen;
-    text-align: center;
-}
+        color: $colorGreen;
+        text-align: center;
+    }
 }
 
 
-@each $clave, $valor in $colores {
+@each $clave,
+$valor in $colores {
     .botones-#{$clave} {
         background-color: $valor;
     }

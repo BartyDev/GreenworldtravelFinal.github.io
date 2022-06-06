@@ -2,95 +2,101 @@
 
 .main-font {
     background-color: $colorBeige;
+
     .conteiner {
 
-    @include flexPropiedades(wrap,space-evenly,center);
+        @include flexPropiedades(wrap, space-evenly, center);
 
-    #nacional,#nacional2,#nacional3,#nacional4 {
-        background-color: #fff;
-        &:hover {
-    background-color: rgb(62, 62, 62);
-    color: #fff;
-    cursor: pointer;
-    transform: scale(1.03);
-    transition: all 1s ease-in;
-}     
-}
-        
-   
-/*====CARDS====*/
+        #nacional,
+        #nacional2,
+        #nacional3,
+        #nacional4 {
+            background-color: #fff;
 
-.card-1 {
-    background-image: url(../assets/lagotiticaca.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+            &:hover {
+                background-color: rgb(62, 62, 62);
+                color: #fff;
+                cursor: pointer;
+                transform: scale(1.03);
+                transition: all 1s ease-in;
+            }
+        }
 
-.card-2 {
-    background-image: url(../assets/nevadoperu.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
 
-.card-3 {
-    background-image: url(../assets/cerrode7colores.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+        /*====CARDS====*/
 
-.card-4 {
-    background-image: url(../assets/MACHUPICCHU.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+        .card-1 {
+            background-image: url(../assets/lagotiticaca.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
 
-.card-5 {
-    background-image: url(../assets/CRISTOREDENTOR.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+        .card-2 {
+            background-image: url(../assets/nevadoperu.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
 
-.card-6 {
-    background-image: url(../assets/CHECHENITZA.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+        .card-3 {
+            background-image: url(../assets/cerrode7colores.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
 
-.card-7 {
-    background-image: url(../assets/MURALLACHINA.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+        .card-4 {
+            background-image: url(../assets/MACHUPICCHU-pequeño.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
 
-.card-8 {
-    background-image: url(../assets/COLISEUM.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+        .card-5 {
+            background-image: url(../assets/CRISTOREDENTORpequeño.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
 
-.card-9 {
-    background-image: url(../assets/TAJMAHAL.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;
-}
+        .card-6 {
+            background-image: url(../assets/CHECHENITZA-pequeño.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
 
-.card-10 {
-    background-image: url(../assets/PETRA.jpg);
-    background-size: cover;
-    background-position: center;
-    height: $CardAltura;   
-}
-}
-button {
-    @extend .botones;
-}
+        .card-7 {
+            background-image: url(../assets/MURALLACHINA.jpg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
+
+        .card-8 {
+            background-image: url(../assets/COLISEUM-pequeño.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
+
+        .card-9 {
+            background-image: url(../assets/TAJMAHAL.jpg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
+
+        .card-10 {
+            background-image: url(../assets/PETRA.jpg);
+            background-size: cover;
+            background-position: center;
+            height: $CardAltura;
+        }
+    }
+
+    button {
+        @extend .botones;
+    }
 }
